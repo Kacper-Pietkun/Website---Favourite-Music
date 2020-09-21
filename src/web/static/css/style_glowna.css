@@ -1,0 +1,345 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Linux Libertine Display G";
+}
+
+a
+{
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+a:hover
+{
+	opacity: 1;
+}
+
+#href_gallery_1
+{
+	color: #ff934d;
+}
+#href_gallery_2
+{
+	color: #ff934d;
+}
+
+body
+{
+	background-color: #242222;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 6vw;
+}
+
+#logo_txt > h1
+{
+	font-size: 12vw;
+	color: #ff934d;
+}
+header
+{
+	width: 100%;
+
+}
+footer
+{
+	width: 100%;
+}
+#logo_txt
+{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+
+	color: #ffffff;
+	width: 100%;
+	letter-spacing: 4px;
+	font-family: Georgia sans-serif;
+}
+
+main
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#menu
+{
+	text-align: center;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+}
+
+#menu > li
+{
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float:left;
+	color: #ffffff;
+	background-color: #ff8636;
+
+}
+
+#menu > li:first-child, #menu > li:first-child + li + li, #menu > li:first-child + li + li + li + li
+{
+	border-right: #aa3101 dashed 1px;
+}
+
+#menu > li:first-child + li + li, #menu > li:first-child + li + li + li
+{
+	border-top: #aa3101 dashed 1px;
+	border-bottom: #aa3101 dashed 1px;
+}
+
+#menu a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menu a:hover
+{
+	color: #aa3101;
+}
+.dropdown-content {
+	display: none;
+	width: 100%;
+}
+
+.content_title > h2
+{
+	font-size: 7vw;
+	color: #ff9f61;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.user
+{
+	color: bisque;
+	margin-top: 20px;
+}
+
+#content
+{
+	color: #ffc996;
+	text-align: justify;
+	margin-top: 30px;
+
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.special_txt
+{
+	color: #cca664;
+	font-weight: bold;
+}
+
+.galeria
+{
+	display: inline-block;
+	width: 45%;
+	margin: 2%;
+	opacity: 0.9;
+}
+
+.galeria_text
+{
+	color: bisque;
+	font-size: 2vw;
+}
+
+.galeria_text_private
+{
+	color: brown;
+	font-size: 1vw;
+}
+
+.galeria:hover
+{
+	opacity: 1;
+}
+
+
+.opis
+{
+	color: #ffc996;
+	text-align: center;
+	font-size: 3vw;
+}
+
+#foot
+{
+	background-color: #ff8636;
+	margin-top: 30px;
+	padding: 15px;
+	text-align: center;
+	font-size: 3vw;
+}
+
+@media screen and (min-width: 600px)
+{
+	#logo_txt
+	{
+		height: 120px;
+		line-height: 100px;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	#logo_txt
+	{
+		height: 160px;
+		line-height: 160px;
+	}
+	body
+	{
+		font-size: 2.3vw;
+	}
+	#menu > li
+	{
+		width: 16.66%;
+		border: none;
+		border-right: #aa3101 dashed 1px;
+		border-top: none;
+		border-bottom: none;
+	}
+	#menu > li:last-child
+	{
+		border-right: none;
+	}
+	#menu > li:first-child + li + li, #menu > li:first-child + li + li + li
+	{
+		border-top: none;
+		border-bottom: none;
+	}
+	.dropdown
+	{
+		position: relative;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #ff8636;
+		z-index: 1;
+		top: 100%;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown_element
+	{
+		border-top: #aa3101 dashed 1px;
+		padding: 10px;
+	}
+	.dropdown_element > a:hover
+	{
+		color: #aa3101;
+		cursor: pointer;
+	}
+	.galeria
+	{
+		width: 24%;
+		margin: 4%;
+	}
+	.opis
+	{
+		font-size: 1.5vw;
+	}
+}
+
+@media only screen and (min-width: 1000px)
+{
+	#logo_txt
+	{
+		height: 220px;
+		line-height: 220px;
+	}
+}
+
+@media only screen and (min-width: 1300px)
+{
+	#logo_txt
+	{
+		height: 300px;
+		line-height: 350px;
+		margin-top: -80px;
+	}
+
+	#logo_txt > h1
+	{
+		font-size: 150px;
+		height: 50px;
+	}
+
+	.content_title > h2
+	{
+		font-size: 50px;
+	}
+
+	#content
+	{
+		font-size: 30px;
+	}
+
+	#content_title > h2 {
+		font-size: 50px;
+	}
+
+	#menu
+	{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 1200px;
+		list-style-type: none;
+	}
+
+	#menu > li
+	{
+		width: 16.6%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		float:left;
+		color: #ffffff;
+		background-color: #ff8636;
+		font-size: 30px;
+	}
+
+	main
+	{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.opis
+	{
+		font-size: 20px;
+	}
+
+	#do_anim > h2
+	{
+		font-size: 50px;
+	}
+	#foot
+	{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+

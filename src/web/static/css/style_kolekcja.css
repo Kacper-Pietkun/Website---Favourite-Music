@@ -1,0 +1,317 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	font-family: "Linux Libertine Display G";
+}
+body
+{
+	background-color: #242222;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 6vw;
+}
+
+#logo_txt > h1
+{
+	font-size: 12vw;
+	color: #ff934d;
+}
+
+#logo_txt
+{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+
+	color: #ffffff;
+	width: 100%;
+	letter-spacing: 4px;
+	font-family: Georgia sans-serif;
+}
+
+#menu
+{
+	text-align: center;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+}
+
+#menu > li
+{
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float:left;
+	color: #ffffff;
+	background-color: #ff8636;
+
+}
+
+#menu > li:first-child, #menu > li:first-child + li + li, #menu > li:first-child + li + li + li + li
+{
+	border-right: #aa3101 dashed 1px;
+}
+
+#menu > li:first-child + li + li, #menu > li:first-child + li + li + li
+{
+	border-top: #aa3101 dashed 1px;
+	border-bottom: #aa3101 dashed 1px;
+}
+
+#menu a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menu a:hover
+{
+	color: #aa3101;
+}
+
+.dropdown-content {
+	display: none;
+}
+
+#root
+{
+	min-height: 500px;
+}
+
+#content_title > h2
+{
+	font-size: 7vw;
+	color: #ff9f61;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.fav_album
+{
+	color: #cca664;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-top: 20px;
+	width: 65%;
+	float: left;
+	font-size: 3.5vw;
+}
+
+.fav_album_button
+{
+	float: left;
+	width: 20%;
+	height: 33px;
+	margin-top: 20px;
+	color: #000000;
+	background-color: #db9523;;
+}
+
+#blocker
+{
+	text-align: center;
+	color: #db5523;
+	margin-top: 20px;
+	font-size: 4vw;
+}
+
+#info
+{
+	color: #db5523;
+	font-size: 4vw;
+	text-align: center;
+}
+
+#foot
+{
+	background-color: #ff8636;
+	margin-top: 30px;
+	padding: 15px;
+	text-align: center;
+	font-size: 3vw;
+}
+
+@media screen and (min-width: 600px)
+{
+	#logo_txt
+	{
+		height: 120px;
+		line-height: 100px;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	#logo_txt
+	{
+		height: 160px;
+		line-height: 160px;
+	}
+	body
+	{
+		font-size: 2.3vw;
+	}
+	#menu > li
+	{
+		width: 16.66%;
+		border: none;
+		border-right: #aa3101 dashed 1px;
+		border-top: none;
+		border-bottom: none;
+	}
+	#menu > li:last-child
+	{
+		border-right: none;
+	}
+	#menu > li:first-child + li + li, #menu > li:first-child + li + li + li
+	{
+		border-top: none;
+		border-bottom: none;
+	}
+	#info
+	{
+		font-size: 3vw;
+	}
+	#blocker
+	{
+		font-size: 3vw;
+	}
+	.fav_album
+	{
+		width: 75%;
+		font-size: 3.5vw;
+	}
+
+	.fav_album_button
+	{
+		width: 10%;
+	}
+	.dropdown
+	{
+		position: relative;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #ff8636;
+		z-index: 1;
+		top: 100%;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown_element
+	{
+		border-top: #aa3101 dashed 1px;
+		padding: 10px;
+	}
+	.dropdown_element > a:hover
+	{
+		color: #aa3101;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 1000px)
+{
+	#logo_txt
+	{
+		height: 220px;
+		line-height: 220px;
+	}
+	#info
+	{
+		font-size: 2vw;
+	}
+	.fav_album
+	{
+		font-size: 2.5vw;
+	}
+	#blocker
+	{
+		font-size: 2vw;
+	}
+}
+
+@media only screen and (min-width: 1300px)
+{
+	#logo_txt
+	{
+		height: 300px;
+		line-height: 350px;
+		margin-top: -80px;
+	}
+
+	#logo_txt > h1
+	{
+		font-size: 150px;
+		height: 50px;
+	}
+
+	#content_title > h2
+	{
+		font-size: 50px;
+	}
+
+	#content
+	{
+		font-size: 30px;
+	}
+
+	#menu
+	{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 1200px;
+		list-style-type: none;
+	}
+
+	#menu > li
+	{
+		width: 16.6%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		float:left;
+		color: #ffffff;
+		background-color: #ff8636;
+		font-size: 30px;
+	}
+
+	#blocker
+	{
+		font-size: 30px;
+	}
+	main
+	{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#info
+	{
+		font-size: 30px;
+	}
+
+	#foot
+	{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 20px;
+	}
+	.fav_album
+	{
+		font-size: 40px;
+		text-align: left;
+	}
+}
+
