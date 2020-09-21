@@ -46,7 +46,7 @@ MongoDB
 MVC (without any framework)
 
 ### Language
-Website interface language is polish
+Website interface language is in polish
 
 ### Programming languages and libraries
  - HTML5
